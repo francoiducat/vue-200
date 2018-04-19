@@ -5,7 +5,7 @@
         <img class="logo" src="./assets/images/logo-people.svg">
       </a>
       <h2 class="md-title" style="flex: 1"></h2>
-      <span class="link">          
+      <span class="link">
         <a href="#/people">Peoples</a>
     </span>
     </md-toolbar>
@@ -14,15 +14,21 @@
         <div class="md-title">Hello {{name}}</div>
       </md-card-header>
     </md-card>
+    <home></home>
   </section>
 </template>
 
 <script>
+  import Home from './Home'
+
   export default {
-    data() {
+    data () {
       return {
-        name: "Cyril"
+        name: 'François'
       }
+    },
+    components: {
+      Home
     }
   }
 
@@ -42,15 +48,15 @@
     display: flex;
     align-items: center;
   }
-  
+
   .logo {
     height: 56px;
   }
-  
+
   .link {
     color: white;
   }
-  
+
   a {
     color: inherit !important;
     text-decoration: none !important;
@@ -61,7 +67,7 @@
     font-weight: normal;
     font-family: 'Open Sans', sans-serif;
   }
-  
+
   a:hover {
     border-bottom: 2px solid white !important;
   }
