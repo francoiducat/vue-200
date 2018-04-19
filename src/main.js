@@ -7,7 +7,6 @@ import App from './App'
 
 Vue.use(VueMaterial)
 
-
 Vue.material.registerTheme('default', {
   primary: 'blue',
   accent: 'grey',
@@ -16,6 +15,6 @@ Vue.material.registerTheme('default', {
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',  
+  el: '#app',
   render: h => h(App)
 })
