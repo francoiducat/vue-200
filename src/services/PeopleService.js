@@ -9,7 +9,7 @@ export default {
       .catch(e => console.log(e))
   },
   fetchRandom () {
-    return axios.get(`$(BACKEND_URL)/random`)
+    return axios.get(`${BACKEND_URL}/random`)
       .then(response => response.data)
       .catch(e => console.log(e))
   }

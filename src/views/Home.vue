@@ -73,7 +73,11 @@
     },
     methods: {
       random: function () {
-        this.person = PEOPLE[Math.floor(Math.random() * PEOPLE.length)]
+        //this.person = PEOPLE[Math.floor(Math.random() * PEOPLE.length)]
+        PeopleService.fetchRandom()
+          .then(res => {
+            this.person = res
+          })
       }
     }
   }
