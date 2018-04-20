@@ -9,10 +9,14 @@ export default {
     },
     fetchRandom(){
         return axios.get(`${BACKEND_URL}/random`)
-        .then(response =>response.data)    
+        .then(response =>response.data)
     },
     delete(id){
         return axios.delete(`${BACKEND_URL}/${id}`)
-        .then(response =>response.data)    
+        .then(response =>response.data)
+    },
+    add(person) {
+      return axios.post(BACKEND_URL, person)
+        .then(response => response.data)
     }
 }
