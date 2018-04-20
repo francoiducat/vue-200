@@ -21,7 +21,7 @@ Vue.material.registerTheme('default', {
 })
 
 /* eslint-disable no-new */
-const vm = new Vue({
+new Vue({
   el: '#app',
   router,
   render: h => h(App)
