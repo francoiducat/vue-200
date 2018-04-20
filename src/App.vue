@@ -5,7 +5,7 @@
         <img class="logo" src="./assets/images/logo-people.svg">
       </router-link>
       <h2 class="md-title" style="flex: 1"></h2>
-      <span class="link">          
+      <span class="link">
         <router-link to="/people">Peoples</router-link>
     </span>
     </md-toolbar>
@@ -44,15 +44,15 @@
     display: flex;
     align-items: center;
   }
-  
+
   .logo {
     height: 56px;
   }
-  
+
   .link {
     color: white;
   }
-  
+
   a {
     color: inherit !important;
     text-decoration: none !important;
@@ -63,7 +63,7 @@
     font-weight: normal;
     font-family: 'Open Sans', sans-serif;
   }
-  
+
   a:hover {
     border-bottom: 2px solid white !important;
   }
