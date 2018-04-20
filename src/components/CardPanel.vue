@@ -33,7 +33,7 @@
           <md-layout md-flex="33">
             <div>
               <span class="label">Manager: </span>
-              <span class="item">{{person.manager | NaFilter}}</span>
+              <span class="item">{{person.manager | na}}</span>
             </div>
             <div>
               <span class="label">Location: </span>
@@ -54,18 +54,18 @@
   </div>
 </template>
 <script>
-  import { NaFilter } from '../filters/Filters'
+  import { NaFilter } from '../filters/Filters.js'
 
   export default {
     name: 'sfeir-card',
     props: ['person'],
-    filters: {
-      NaFilter
-    },
     methods: {
       onDelete: function () {
         this.$emit('delete', this.person);
       }
+    },
+    filters: {
+      na: NaFilter
     }
   }
 </script>
